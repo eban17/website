@@ -1,0 +1,184 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CSC 173 Final Assignment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!--test template style-->
+<style>.responsive {
+  max-width: 100%;
+  height: auto;
+}html{height:100%}*{margin:0;padding:0}body{font:normal 15px 'trebuchet ms',arial,sans-serif;background:#FFF url(background.png) repeat;color:#777;word-break:break-all}p{padding:0 0 20px 0;line-height:1.7em}img{border:0}h1,h2,h3,h4,h5,h6{font:bold 28px 'century gothic',arial,sans-serif;color:rgb(224, 39, 48);margin:0 0 15px 0;padding:15px 0 5px 0}h2{font:normal 115% 'century gothic',arial,sans-serif;color:#d48429}h4,h5,h6{margin:0;padding:0 0 5px 0;font:normal 30px arial,sans-serif;color:#c0142b}h5,h6{font:italic 21px arial,sans-serif;padding:0 0 15px 0;color:#000}h6{color:#362C20}a,a:hover{outline:none;text-decoration:underline;color:tomato}a:hover{text-decoration:none}.left{float:left;width:auto;margin-right:10px}.right{float:right;width:auto;margin-left:10px}.center{display:block;text-align:center;margin:20px auto}blockquote{margin:20px 0;padding:10px 20px 0 20px;border:1px solid #E5E5DB;background:#FFF}ul{margin:2px 0 22px 17px}ul li{list-style-type:circle;margin:0 0 6px 0;padding:0 0 4px 5px}ol{margin:8px 0 22px 20px}ol li{margin:0 0 11px 0}#main,#logo,#menubar,#site_content,#footer{margin-left:auto;margin-right:auto}#header{height:240px}#logo{width:80%;position:relative;margin-bottom:45px}#logo h1,#logo h2{font:normal 300% 'century gothic',arial,sans-serif;border-bottom:0;text-transform:none;margin:0}#logo_text h1,#logo_text h1 a,#logo_text h1 a:hover{padding:22px 0 0 0;color:#000;letter-spacing:.1em;text-decoration:none}#logo_text h1 a .logo_colour{color:#068900}#logo_text h2{font-size:15px;padding:4px 0 0 0;color:#676767}#menubar{width:80%;height:72px;padding:0;background:transparent url(transparent.png) repeat}ul#menu,ul#menu li{float:left;margin:0;padding:0}ul#menu li{list-style:none}ul#menu li a{letter-spacing:.1em;font:normal 15px arial,sans-serif;display:block;float:left;height:37px;padding:29px 26px 6px 26px;text-align:center;color:#000;text-transform:uppercase;text-decoration:none;border-bottom:2px solid #068900;background:transparent}ul#menu li a:hover,ul#menu li.selected a,ul#menu li.selected a:hover{color:#FFF;background:rgb(224, 39, 48)}#site_content{width:80%;overflow:hidden;margin:0 auto 0 auto;padding:20px 20px 20px 20px;background:transparent url(transparent_light.png) repeat}.sidebar{float:right;width:190px;padding:0 15px 20px 15px}.sidebar ul{width:178px;padding:4px 0 0 0;margin:4px 0 30px 0}.sidebar li{list-style:none;padding:0 0 7px 0}.sidebar li a,.sidebar li a:hover{padding:0 0 0 40px;display:block;background:transparent url(link.png) no-repeat left center}.sidebar li a.selected{color:#444;text-decoration:none}#content{text-align:left;padding:0}#content ul{margin:2px 0 22px 0}#content ul li{list-style-type:none;background:url(bullet.png) no-repeat;margin:0 0 6px 0;padding:0 0 4px 25px;line-height:1.5em}#footer{width:900px;font:normal 15px 'lucida sans unicode',arial,sans-serif;height:33px;padding:24px 0 5px 0;text-align:center;background:transparent url(transparent.png) repeat;color:#FFF;text-transform:uppercase;letter-spacing:.1em}#footer a{color:#FFF;text-decoration:none}#footer a:hover{color:#FFF;text-decoration:underline}footer{background:rgb(224, 39, 48);height:350px}footer h2{color:#fff;font-size:28px;width:80%;margin:auto}.search{color:#5D5D5D;border:1px solid #BBB;width:134px;padding:4px;font:100% arial,sans-serif}#colours{height:0;text-align:right;padding:66px 16px 0 300px}.form_settings{margin:15px 0 0 0}.form_settings p{padding:0 0 4px 0}.form_settings span{float:left;width:200px;text-align:left}.form_settings input,.form_settings textarea{padding:5px;width:299px;font:15px arial;border:1px solid #E5E5DB;background:#FFF;color:#47433F}.form_settings .submit{font:15px arial;border:1px solid;width:99px;margin:0 0 0 212px;height:33px;padding:2px 0 3px 0;cursor:pointer;background:#068900;color:#FFF}.form_settings textarea,.form_settings select{font:15px arial;width:299px}.form_settings select{width:310px}.form_settings .checkbox{margin:4px 0;padding:0;width:14px;border:0;background:none}.separator{width:100%;height:0;border-top:1px solid #D9D5CF;border-bottom:1px solid #FFF;margin:0 0 20px 0}table{margin:10px 0 30px 0}table tr th,table tr td{background:#3B3B3B;color:#FFF;padding:7px 4px;text-align:left}table tr td{background:#F0EFE2;color:#47433F;border-top:1px solid #FFF}</style>
+
+<style>.scroll-indicator-controller{position:fixed;top:50vh;transform:translate(0,-50%);right:10px;z-index:999}.scroll-indicator-controller.indi-mobile>div span{display:none}@media (min-width:1025px){.scroll-indicator-controller{right:20px}}.scroll-indicator-controller>div{width:20px;height:20px;position:relative;border-radius:50%;border:1px solid rgb(224, 39, 48);background:rgba(0,0,0,.25);margin:0 0 10px 0;cursor:pointer;transition:background .4s ease;will-change:transition}.scroll-indicator-controller>div span{color:rgb(224, 39, 48);position:absolute;right:calc(100% + 8px);white-space:nowrap;top:50%;font-family:arial,sans-serif;font-size:16px;line-height:17px;width:0;overflow:hidden;opacity:0;transform:translateY(-50%) translateX(10px);transition:all .4s ease;will-change:transition}@media (hover:none){.scroll-indicator-controller>div span{display:none}}.scroll-indicator-controller>div span:after{content:"-----";padding-left:5px;letter-spacing:-2px;font-family:arial,sans-serif;vertical-align:text-top;line-height:14px}@media (hover:hover),(-ms-high-contrast:none),(-ms-high-contrast:active){.scroll-indicator-controller>div:hover span{width:auto;opacity:1;overflow:visible;transform:translateY(-50%) translateX(0)}}.scroll-indicator-controller>div.active{background:rgb(224, 39, 48);border-color:rgba(0,0,0,.25)}@supports (-ms-ime-align:auto){.scroll-indicator-controller>div span{transition:opacity .4s ease}}</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script data-require="d3@3.5.3" data-semver="3.5.3" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.js"></script>
+<style>
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  
+  .x.axis path {
+    display: none;
+  }
+  
+  .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+</style>
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <div>
+          <div class="scroll-indicator" id="section00" data-scroll-indicator-title="Home"></div>
+      </div>
+          <h1>CSC 173 Final Assignment</h1>
+          <h2> </h2>
+            Done by: Eban and Massoud</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li ><a href="/final173 copy.html">Home</a></li>
+          <li class="selected"><a href="/final173.html">3rd Visualization</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div id="site_content">
+      <div id="content">
+            <h5>1. Wasting – Moderate and severe: % of children aged 0–59 months who are below minus two standard deviations from median weight-for-height</h5>
+            <h5>2. Overweight – Moderate and severe: % aged 0-59 months who are above two standard deviations from median weight-for-height.</h5>
+            <h5>3. Stunting – Moderate and severe: % of children aged 0–59 months who are below minus two standard deviations from median height-for-age.</h5>    
+            <h5>4. Underweight – Moderate and severe: % of children aged 0–59 months who are below minus two standard deviations from median weight-for-age.</h5>
+            <br>
+            <hr>
+            <br>
+            <div class="slideshow-container">
+
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="1.jpg" style="width:100%">
+                <div class="text">1. Children that are underweight suffer major malnutrion which causes their bones de-nsity to decrease as well as be more prone to diseases.</div>
+              </div>
+            
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="2.jpg" style="width:100%">
+                <div class="text">Typically food wastage happens due to overproduction and less consumtion by the consumers. This leads to waste majority of food being thrown out which could help third world contries.</div>
+              </div>
+            
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="3.jpg" style="width:100%">
+                <div class="text">On the other hand of the spectrum is overweight due to the consumption of large quantity of food with lack of physcial movement. This also leads to different kind of illness as well as to some extreme amputation. </div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="4.png" style="width:100%">
+                <div class="text">Stunting is the impaired growth and development that children experience from poor nutrition, repeated infection, and inadequate psychosocial stimulation. Children are defined as stunted if their height-for-age is more than two standard deviations below the WHO Child Growth Standards median</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="5.png" style="width:100%">
+                <div class="text">Income Classification:The World Bank assigns the world's economies to four income groups—low, lower-middle, upper-middle, and high-income countries. This image shows the discrepancy of income between 1st world countries and 3rd world countries. </div>
+              </div>
+            
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+              <div>
+            <div class="scroll-indicator" id="section03" data-scroll-indicator-title="3rd Visualization"></div>
+            <h1>3rd visualization</h1>
+            
+            <div id="drop"></div>
+            <br>
+            <script src="https://d3js.org/d3.v3.min.js"></script>
+            <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+            <script src="d3.js"></script>
+            
+        </div>
+  <br>
+        
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  <br>
+  <br>
+  <br>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+<div style="margin-left:150px; margin-right:150px"> <h6>Visualization above shows the countries and the percentage of each factor selected from the drop down menu. If no percentage is shown it is due to the fact that there is no data collected for these countries. The visualization tooltip brings out information of which country is hovered over and their percentage.</h6></div>
+  
+<footer></footer>
+<!--Easy Scroll Dots js-->
+
+<script>function dotsThrottle(t,e,o){let n,i,d,l=null,c=0;o||(o={});const s=function(){c=!1===o.leading?0:Date.now(),l=null,d=t.apply(n,i),l||(n=i=null)};return function(){const a=Date.now();c||!1!==o.leading||(c=a);const r=e-(a-c);return n=this,i=arguments,r<=0||r>e?(l&&(clearTimeout(l),l=null),c=a,d=t.apply(n,i),l||(n=i=null)):l||!1===o.trailing||(l=setTimeout(s,r)),d}}let dotFixedNavPresent=!1,dotFixedNavId="",dotFixedNavUp=!1,dotOffset=0;function easyScrollDots(t){let e=document.querySelectorAll(".scroll-indicator");if(!0===t.fixedNav&&(dotFixedNavPresent=!0),dotFixedNavId=""!==t.fixedNavId&&t.fixedNavId,!0===t.fixedNavUpward&&(dotFixedNavUp=!0),t.offset>0&&(dotOffset=t.offset),e.length){const t='<div class="scroll-indicator-controller"><span></span></div>';document.querySelector("body").lastElementChild.insertAdjacentHTML("afterend",t);const o=document.querySelector(".scroll-indicator-controller");void 0===window.orientation&&-1===navigator.userAgent.indexOf("IEMobile")||o.classList.add("indi-mobile");const n=Array.prototype.slice.call(e);n.forEach(function(t,e){const n=t.getAttribute("id"),i=t.getAttribute("data-scroll-indicator-title");let d="";0==e&&(d="active"),o.lastElementChild.insertAdjacentHTML("afterend",'<div class="'+d+'" data-indi-controller-id="'+n+'" onclick="scrollIndiClicked(\''+n+"');\"><span>"+i+"</span><div></div></div>")});const i=o.querySelectorAll("[data-indi-controller-id]"),d=dotsThrottle(function(){let t={};n.forEach(function(e){const o=e.getAttribute("id"),n=e.getBoundingClientRect().top;t[o]=n});const e=Object.keys(t).map(function(e){return t[e]});Object.keys(t).forEach(function(n){t[n]==function(){const t=e.filter(function(t){return t>-150});return Math.min.apply(null,t)}()&&(Array.prototype.forEach.call(i,function(t){t.classList.contains("active")&&t.classList.remove("active")}),o.querySelector('[data-indi-controller-id="'+n+'"]').classList.add("active"))})},300);window.addEventListener("scroll",d)}}function scrollIndiClicked(t){if(window.jQuery){const e=$("html, body");if(!0===dotFixedNavPresent&&dotFixedNavId.length){const o=document.getElementById(dotFixedNavId).clientHeight,n=$("#"+t);if(!0===dotFixedNavUp){e.animate({scrollTop:n.offset().top-dotOffset},700);const t=document.body.getBoundingClientRect().top;setTimeout(function(){document.body.getBoundingClientRect().top>t&&e.animate({scrollTop:n.offset().top-o-dotOffset},400)},400)}else e.animate({scrollTop:n.offset().top-o-dotOffset},700)}else e.animate({scrollTop:$("#"+t).offset().top-dotOffset},700)}else if(!0===dotFixedNavPresent&&dotFixedNavId.length){const e=document.getElementById(dotFixedNavId).clientHeight,o=document.getElementById(t);if(!0===dotFixedNavUp){window.scrollTo({top:o.offsetTop-dotOffset,left:0,behavior:"smooth"});const t=document.body.getBoundingClientRect().top;setTimeout(function(){document.body.getBoundingClientRect().top>t&&window.scrollTo({top:o.offsetTop-e-dotOffset,left:0,behavior:"smooth"})},400)}else window.scrollTo({top:o.offsetTop-e-dotOffset,left:0,behavior:"smooth"})}else window.scrollTo({top:document.getElementById(t).offsetTop-dotOffset,left:0,behavior:"smooth"})}</script>
+<!--Easy Scroll Dots init-->
+<script>
+easyScrollDots({
+  'fixedNav': false,
+  'fixedNavId': '',
+  'fixedNavUpward': false,
+  'offset': 0
+});
+</script>
+</body>
+</html>

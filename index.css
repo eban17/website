@@ -1,0 +1,103 @@
+  .content {
+    margin: 0;
+    padding: 15px 20px;
+    background-color: #c41d1d;
+  }
+
+
+  
+  .article {
+    line-height: 1.5em;
+  }
+  
+  .entry  {
+    border-top: 1px solid rgb(189, 23, 23);
+    padding-top: 2px;
+    margin-top: 3em;
+  }
+  figure {
+    border: 1px #c51f1f solid;
+    padding: 4px;
+    margin: auto;
+  }
+  
+  figcaption {
+    background-color: black;
+    color: rgb(189, 21, 21);
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
+  .text{
+      text-rendering: optimizeSpeed;
+      
+  }
+  .drop{
+      fill: rgb(54, 156, 240);
+      position:absolute;
+      background-position: 40ch;
+      
+  }
+  
+  .rectangle {
+    fill: rgb(17, 18, 19);
+}
+.rectangle:hover {
+    fill: red;
+}
+.axis {
+  font:larger;
+}
+.color {
+    background-color: #FFF;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: rgb(226, 12, 12);
+  shape-rendering: auto;
+  
+}
+  
+  ul {
+      margin: 20px;
+  }
+  
+  .input-color {
+      position: relative;
+  }
+  .input-color input {
+      padding-left: 20px;
+  }
+  .input-color .color-box {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      background-color: rgb(182, 33, 33);
+      position: absolute;
+      left: 5px;
+      top: 5px;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 2px;
+    height: 150px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
